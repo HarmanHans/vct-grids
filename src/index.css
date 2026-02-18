@@ -23,3 +23,53 @@ html, body {
   font-family: "Lexend", sans-serif;
   font-weight: 900;
 }
+
+.rarity {
+  font-family: "Lexend", sans-serif;
+  color: white;
+}
+
+.grid-wrapper {
+  min-height: calc(100vh - 70px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+
+  width: 100%;
+  max-width: 600px;
+  aspect-ratio: 1 / 1; 
+}
+
+.game-cell {
+  background: #1e293b;
+  border-radius: 12px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 1.5rem;
+  font-weight: 600;
+
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.game-cell:hover {
+  background: #334155;
+  transform: scale(1.03);
+}
+
+.other-cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}

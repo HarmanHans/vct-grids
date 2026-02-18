@@ -1,8 +1,12 @@
 import NavBar from "./NavBar";
+import Grid from "./Grid";
 
 function App() {
-  const name = 'Chungus';
-  return <div><NavBar /></div>
+  return(
+  <div>
+    <NavBar />
+    <Grid/>
+  </div>)
 }
 
 export default App;
